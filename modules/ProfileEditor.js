@@ -1,7 +1,9 @@
 
 const Discord = require('discord.js')
-const { Database } = require("ark.db");
+const Database = require("@replit/database")
 
+
+addPoints("Test", 5)
 
 /**
  * 
@@ -10,7 +12,12 @@ const { Database } = require("ark.db");
  */
 function addPoints(fidele, points) {
     const db = new Database();
-    var users = db.get('users');
+    
+    
+    
+    
+
+    /*
     var index = null;
 
     for(i = 0; i < users.length; i++) {
@@ -38,6 +45,7 @@ function addPoints(fidele, points) {
     }
 
     console.log('[PROFILEEDITOR] Added ' + points + " pat points to " + fidele.username + " account.");
+    */
 }
 
 exports.addPoints = addPoints;

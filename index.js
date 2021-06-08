@@ -23,4 +23,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login('ODUwNDYyMzQ2MDk3ODUyNDg2.YLqEyA.ctY94ZOCMqabFYQYpnVYjNpZ4nM');
+client.login('ODUwNDYyMzQ2MDk3ODUyNDg2.YLqEyA.8I2h7Uiux5GppOvokOrnq_YdyTs');
+
+//Keeping server alive
+const keepAlive = require('./server.js');
+keepAlive();
